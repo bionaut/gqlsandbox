@@ -14,6 +14,7 @@ export const Sample: VFC = () => {
   const [state, setState] = useState<any[]>([])
   useSubscription(subDoc, {
     onSubscriptionData: (data) => {
+      console.log(data)
       setState((s: any[]) => {
         return [...s, data]
       })

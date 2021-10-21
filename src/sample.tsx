@@ -37,6 +37,5 @@ export const Sample: VFC = () => {
 
   return <div>
     <button onClick={() => mutate()} disabled={loading} >Send mutation</button>
-    {JSON.stringify(state)}
   </div>
 }
